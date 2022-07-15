@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { GithubProvider } from './context/github/GithubContext';
+import { AlertProvider } from './context/alert/AlertContext';
 import Home from './pages/Home';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
@@ -9,6 +10,7 @@ import Footer from './components/layout/Footer';
 function App() {
   return (
     <GithubProvider>
+      <AlertProvider>
     <Router >
       <div className="flex flex-col justify-between h-screen text-slate-200">
         <Navbar />
@@ -22,7 +24,8 @@ function App() {
         </main>
         <Footer/>
       </div>
-      </Router>
+        </Router>
+        </AlertProvider>
       </GithubProvider>
   );
 }
