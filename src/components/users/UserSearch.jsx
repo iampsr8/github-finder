@@ -39,7 +39,7 @@ function UserSearch() {
                               value={text}
                               onChange={handleChange}
                 />
-                <button type="submit" className="absolute top-0 right-0 rounded-l-none btn w-28 xl:btn-lg sm:btn-md">Go</button>
+                <button type="submit" className="absolute top-0 right-0 rounded-l-none btn w-28 xl:btn-lg sm:btn-md text-slate-200">Go</button>
             </div>
           </div>
         </form>
