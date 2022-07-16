@@ -8,7 +8,7 @@ import NotFound from './pages/NotFound';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Alert from './components/layout/Alert';
-import RepoList from './components/repos/RepoList';
+
 
 function App() {
   return (  
