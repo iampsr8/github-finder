@@ -66,10 +66,10 @@ function User() {
                       <div className="mb-6">
                           <h1 className="text-3xl card-title">
                               {name}
-                              <div className="ml-2 mr-1 badge badge-success">{ type}</div>
+                              <div className="ml-2 mr-1 badge badge-success badge-outline">{ type}</div>
                               {hireable ? (
-                                  <div className="mx-1 badge badge-info ">Hireable</div>
-                              ) : <div className="mx-1 badge badge-info dark:bg-red-300 dark:text-red-800">Not&nbsp;Hireable</div>
+                                  <div className="mx-1 badge badge-info badge-outline">Hireable</div>
+                              ) : <div className="mx-1 badge badge-error badge-outline ">Not&nbsp;Hireable</div>
                               }
                           </h1>
                           <p>{ bio}</p>
